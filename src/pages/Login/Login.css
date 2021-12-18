@@ -1,0 +1,123 @@
+.container-login {
+  min-height: 100vh;
+  height: 1083px;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#002266), color-stop(63%, #007cd8), to(#58d7ff));
+  background: linear-gradient(90deg, #002266 0%, #007cd8 63%, #58d7ff 100%);
+}
+
+.container-login .LOGIN {
+  height: 530px;
+  width: 28rem;
+  border: 1px solid white;
+  margin-top: 100px;
+  border-radius: 5px;
+}
+
+.container-login .LOGIN .LOGO {
+  width: 153px;
+  height: 122px;
+}
+
+.container-login .LOGIN span {
+  width: 90%;
+}
+
+.container-login .LOGIN .login-p {
+  font-family: 'Iranian Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.container-login .LOGIN .Login-Btn {
+  background-color: #002266;
+  margin-top: 4rem;
+}
+
+.container-login .LOGIN .Login-Btn:hover {
+  background-color: #001133;
+}
+
+.container-login .LOGIN .Login-Btn:active {
+  background-color: #001133;
+}
+
+.container-login .LOGININPUT {
+  width: 300px;
+  outline: none;
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.container-login .LOGININPUT:focus {
+  border-bottom-color: skyblue;
+}
+
+.container-login .warning {
+  width: 300px;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid red;
+}
+
+.container-login .div-CircuitBoard {
+  width: 38rem;
+  position: absolute;
+  top: -50px;
+  right: -300px;
+}
+
+.container-login .div-CircuitBoard .CircuitBoard {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container-login .div-CircuitBoard .CircuitBoard:hover {
+  opacity: 1;
+}
+
+.container-login .Image-bottom {
+  width: 496px;
+  height: 496px;
+  position: absolute;
+  left: -70px;
+  margin-top: 25px;
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
+}
+
+.container-login .Image-bottom .CircuitBoard2 {
+  opacity: 0.5;
+}
+
+.container-login .Image-bottom .CircuitBoard2:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 769px) {
+  .div-CircuitBoard {
+    display: none;
+  }
+  .row-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .LOGIN {
+    margin-top: 20px;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+/*# sourceMappingURL=Login.css.map */

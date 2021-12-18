@@ -1,0 +1,129 @@
+@import '../../sass/variables';
+
+.container-login{
+    min-height: 100vh;
+    height: 1083px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(0,34,102,1) 0%, rgba(0,124,216,1) 63%, rgba(88,215,255,1) 100%);
+
+
+    .LOGIN{
+        height: 530px;
+        width: 28rem;
+        border: 1px solid white;
+        margin-top: 100px;
+        border-radius: 5px;
+
+
+    
+        .LOGO {
+            width: 153px;
+            height: 122px;
+        }
+        span{
+            width: 90%;
+        }
+        .login-p{
+            font-family: 'Iranian Sans', sans-serif;
+            font-size: 28px;
+            
+            font-weight: 400;
+    
+        }
+    
+        .Login-Btn{
+            background-color: $loginBtn;
+            margin-top: 4rem;
+    
+            &:hover{
+                background-color: darken($color: $loginBtn, $amount: 10%);
+            }
+    
+            &:active{
+                background-color: darken($color: $loginBtn, $amount: 10%);
+            }
+        }
+    }
+    
+    .LOGININPUT{
+        width: 300px;
+        outline: none;
+        margin-top: 1rem;
+        border: none;
+        border-bottom: 1px solid black;
+        &:focus{
+
+            border-bottom-color: skyblue;
+            
+        }
+    }
+
+    .warning{
+        width: 300px;
+        margin-top: 1rem;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid red;
+        
+
+    }
+    
+    .div-CircuitBoard{
+        width: 38rem;
+        position: absolute;
+        top: -50px;
+        right: -300px;
+        .CircuitBoard{
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            object-fit: cover;
+        
+        
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    
+    
+    
+    .Image-bottom{
+        width: 496px;
+        height: 496px;
+        position: absolute;
+        left: -70px;
+        margin-top: 25px;
+        transform:rotate(43deg);
+        .CircuitBoard2{
+            opacity: 0.5;
+    
+            // transform:translate(20px,140px);
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 769px) {
+    .div-CircuitBoard{
+        display: none;
+    }
+    .row-login{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .LOGIN{
+        margin-top: 20px;
+    }
+
+
+}
+
+
+
+.cursor-pointer{
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+.layout-footer{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1000;
+    width: 100%;
+}
+
+.layout-header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 900;
+}

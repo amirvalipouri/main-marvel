@@ -1,0 +1,54 @@
+@import "../../sass/variables";
+
+.FOOTER{
+    width: 100%;
+    height: 632px;
+    background-color: #EFEFEF;
+    position: absolute;
+    bottom: 0px;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    overflow-x: hidden;
+
+
+
+    .footer-Btn{
+        border: 2px solid #676767;
+        font-family: $iranSans;
+        width: 270px;
+        font-size: 18px;
+
+        &:hover{
+            border-color:#bae5c3;
+        }
+    }
+
+
+
+    .cursor {
+        cursor: pointer;
+    }
+
+    .footer-p{
+        color: #002266;
+        font-family: $iranSans;
+        font-size: 18px;
+    }
+
+    .header-P{
+        font-family: $bYekan;
+        font-size: 25px;
+        color:#676767;
+    }
+
+    .footer-span{
+        width: 90%;
+        border: none;
+        border-bottom: 1px solid #707070;
+        display: block;
+        margin: auto;
+    }
+}
+

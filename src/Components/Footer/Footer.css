@@ -1,0 +1,48 @@
+.FOOTER {
+  width: 100%;
+  height: 632px;
+  background-color: #EFEFEF;
+  position: absolute;
+  bottom: 0px;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+  overflow-x: hidden;
+}
+
+.FOOTER .footer-Btn {
+  border: 2px solid #676767;
+  font-family: "Iranian Sans", sans-serif;
+  width: 270px;
+  font-size: 18px;
+}
+
+.FOOTER .footer-Btn:hover {
+  border-color: #bae5c3;
+}
+
+.FOOTER .cursor {
+  cursor: pointer;
+}
+
+.FOOTER .footer-p {
+  color: #002266;
+  font-family: "Iranian Sans", sans-serif;
+  font-size: 18px;
+}
+
+.FOOTER .header-P {
+  font-family: "BYekan, B Yekan";
+  font-size: 25px;
+  color: #676767;
+}
+
+.FOOTER .footer-span {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #707070;
+  display: block;
+  margin: auto;
+}
+/*# sourceMappingURL=Footer.css.map */

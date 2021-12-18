@@ -1,0 +1,60 @@
+.NAV {
+  direction: rtl;
+  height: 136px;
+  z-index: 1000;
+}
+
+.NAV nav {
+  background-color: #007CD8;
+  color: white;
+}
+
+.NAV nav li:hover {
+  border: none;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.NAV nav li:active {
+  border: none;
+  border-bottom: 2px solid skyblue;
+  cursor: pointer;
+}
+
+.NAV nav .iranSans {
+  font-family: "Iranian Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.NAV nav .logo {
+  width: 93px;
+  height: 92px;
+}
+
+.NAV nav .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.NAV nav .FLEX {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+  .FLEX {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=Header.css.map */
