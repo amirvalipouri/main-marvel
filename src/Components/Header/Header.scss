@@ -2,7 +2,7 @@
 
 .NAV {
     direction: rtl;
-    height: auto;
+
     z-index: 1000;
 
 
@@ -14,7 +14,7 @@
 
 
         li{
-           &:hover{
+           &:hover:not(:first-child){
                border: none;
                border-bottom: 1px solid white;
                cursor: pointer;
@@ -35,15 +35,7 @@
             
         }
 
-        .logo{
-            width: 93px;
-            height: 92px;
-
-            img{
-                width: 100%;
-                height: 100%;
-            }
-        }
+        
 
         .FLEX{
             display: flex;
