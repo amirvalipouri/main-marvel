@@ -2,7 +2,7 @@
 
 .NAV {
     direction: rtl;
-
+    height: 80px;
     z-index: 1000;
 
 
@@ -11,19 +11,23 @@
     nav{
         background-color: #007CD8 ;
         color: white;
+        height: 100%;
 
 
         li{
+            height: 100%;
            &:hover:not(:first-child){
                border: none;
                border-bottom: 1px solid white;
                cursor: pointer;
+            //    height: 100%;
 
            } 
-           &:active{
+           &:active:not(:first-child){
             border: none;
             border-bottom: 2px solid skyblue;
             cursor: pointer;
+            // height: 100%;
         }
         }
 
@@ -41,7 +45,15 @@
             display: flex;
             justify-content: space-between;
         }
+
+        
     }
+}
+
+.header-btn{
+    position: absolute;
+    top: 20px;
+    left: 10px;
 }
 
 @media screen and (max-width : 992px) {
@@ -50,4 +62,14 @@
         
         flex-direction: column;
     }
+
+    .bg-resonsive{
+        background-color: #025ea5 ;
+    }
+
+    .header-btn{
+            position: static;      
+    }
+    
 }
+

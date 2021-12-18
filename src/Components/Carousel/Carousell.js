@@ -18,7 +18,8 @@ const Carousell = () => {
         setIndex(selectedIndex);
     };
     return(
-    <Carousel fluid activeIndex={index} onSelect={handleSelect} className="carousel w-full" style={{height : "500px"}}>
+
+    <Carousel  activeIndex={index} onSelect={handleSelect} className="carousel w-full" style={{height : "500px"}}>
       <Carousel.Item>
         <Row className="Row1 d-flex w-100">
                     <Col  className="col-1 d-flex justify-content-center align-items-center mb-4 w-50" xs={12} sm={12} md={12} lg={6} xl={6}>

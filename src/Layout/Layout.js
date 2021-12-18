@@ -15,7 +15,7 @@ const Layout = ({children}) =>{
                     <Header/>
                 </Col>
             </Row>
-            <main className="w-100" style={{marginTop:"76px"}}>
+            <main className="w-100" style={{marginTop:"80px"}}>
                 <Outlet/>
             </main>
             <Row className="position-relative">
