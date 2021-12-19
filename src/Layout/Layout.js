@@ -7,7 +7,7 @@ import Footer from "../Components/Footer/Footer"
 import './Layout.scss';
 
 
-const Layout = ({children}) =>{
+const Layout = () =>{
     return(
         <Container fluid className="w-full h-full">
             <Row className="position-relative">
@@ -15,7 +15,7 @@ const Layout = ({children}) =>{
                     <Header/>
                 </Col>
             </Row>
-            <main className="w-100" style={{marginTop:"80px"}}>
+            <main className="w-full h-full" style={{marginTop:"80px"}}>
                 <Outlet/>
             </main>
             <Row className="position-relative">

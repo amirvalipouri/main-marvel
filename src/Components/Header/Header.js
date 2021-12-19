@@ -33,13 +33,14 @@ function Header() {
                                                 <img src={Logo} alt="logo" style={{width : "100%" , height : "100%"}} />
                                             </li> */}
                                             <li className="nav-item active mx-2 mx-sm-auto  iranSans">
-                                                <a className="nav-link text-white" href="#">صحفه اصلي</a>
+                                                <a className="nav-link text-white" href="/">صحفه اصلي</a>
+                                                
                                             </li>
                                             <li className="nav-item mx-2 mx-sm-auto iranSans">
                                                 <a className="nav-link text-white" href="#">قوانين و مقررات مشاوره اقتصادي</a>
                                             </li>
                                             <li className="nav-item mx-2 mx-sm-auto iranSans">
-                                                <a className="nav-link text-white" href="#">ويندوز سرور تريد</a>
+                                                <a className="nav-link text-white" href="/server">ويندوز سرور تريد</a>
                                             </li>
                                             <li className="nav-item mx-2 mx-sm-auto iranSans">
                                                 <a className="nav-link text-white" href="#"> مقالات</a>

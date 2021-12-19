@@ -8,8 +8,9 @@ import {
   Link,
   useRoutes,
 } from "react-router-dom";
-import Register from './pages/Register/Register';
+
 import Layout from "../src/Layout/Layout"
+import Server from './pages/ServerPage/Server';
 
 
 const routes = [
@@ -22,6 +23,7 @@ const routes = [
     element: <Layout />,
     children: [
       { path: "/", element: <Main /> },
+      { path : '/server' , element : <Server/>  }
     ],
   },
 ]

@@ -1,0 +1,117 @@
+@import '../../sass/variables';
+
+
+.SERVER{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    .Row1{
+        background-image:$backgroundImage;
+        overflow: hidden;
+        width: 100%;
+        height: 400px;
+        .col-1{
+            width: 100%;
+            height: 100%;
+            background-image: url('../../assert/circuit2.png');
+            background-size: 494px 494px;
+            background-attachment: scroll;
+            background-repeat: repeat-x; 
+
+            div{
+                width: 100vw;
+                height: 100px;
+                background-color: rgb(130, 187, 228);
+
+                p{
+                    font-family: $iranSans;
+                    font-size: 30px;
+                }
+            }
+
+            
+        }
+    }
+
+    .Row2{
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+        .col-1{
+
+
+            div{
+                width: 400px;
+                height: 400px;
+                .server-img{
+                    transform: translate(0px , 80px);
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+        }
+        .col-2{
+
+            .paraghraph-1{
+                color: #002266;
+                font-size: 30px;
+            }
+            .paraghraph-2{
+                color: #707070;
+                font-size: 18px;
+            }
+        }
+
+        .col-3{
+            width: 100%;
+        background-color: #007CD8;
+        height: auto;
+
+            .Row2-1{
+                margin-top:100px;
+                margin-bottom: 100px;
+                .col-3-1{
+                    width: 275px;
+                    height: 300px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .col-3-3{
+                    width: 275px;
+                    height: 300px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .buy-server{
+                    background-color: rgb(99, 176, 231);
+                    height: 300px;
+                    width: 275px;
+                    border-radius: 5px;
+                }
+                
+            }
+        }
+
+    }
+
+}
+
+.iranSans {
+    font-family: $iranSans;
+}
+
+@media screen and (max-width : 768px) {
+    .server-img{
+        transform: none;
+        margin-bottom: 30px;
+    }
+}

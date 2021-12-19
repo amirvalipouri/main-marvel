@@ -4,9 +4,9 @@ import "./Footer.scss";
 
 const Footer = () => {
     return(
-        <Container className="overflow-hidden">
+        <Container fluid className="w-full overflow-hidden">
             <Row>
-                <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                <Col  xs={12} sm={12} md={12} lg={12} xl={12}>
                     <footer className=" FOOTER p-3">
                         <Row className="d-flex justify-content-center align-items-center p-5">
                             <Col xs={12} sm={6} md={6} lg={3} xl={3} className="p-3 d-flex justify-content-center align-items-center">
@@ -67,7 +67,7 @@ const Footer = () => {
                                 </div>
                             </Col>
                             <Col style={{height:"200px"}}  className="h-auto d-flex justify-content-center flex-column align-items-center"  xs={12} sm={6} md={6} lg={3} xl={3}>
-                                <div className="d-flex justify-content-center flex-column align-items-end">
+                                <div className="d-flex justify-content-center flex-column align-items-end  ">
                                     <p className="header-P">اطلاعات تماس</p>
                                     <div className="d-flex justify-content-center align-items-center" ><p className="mt-2 mx-2">info@marveltrade.org</p><span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30.472" height="27.781" viewBox="0 0 36.472 27.781">
