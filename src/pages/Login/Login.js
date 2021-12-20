@@ -7,11 +7,19 @@ import Btn from "../../Components/Button/Btn"
 import { Row ,Col , Container } from 'react-bootstrap';
 import Logo from '../../assert/marvel.png'
 import CircuitBoard from '../../assert/circuit-board.png'
+import {authAction} from '../../store/auth'
+import { useDispatch } from 'react-redux'
+import { useNavigate  } from "react-router-dom";
 
 
 const Login = () => {
     const [ login , setLogin ] = useState(0);
-    
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const enterHandler = () => {
+        navigate('/')
+    }
 
 
 
@@ -62,6 +70,7 @@ const Login = () => {
     const ConfirmNumber = (e) => {
         e.preventDefault()
 
+        dispatch(authAction.Login())
         resetCode();
     }
 
@@ -116,7 +125,7 @@ const Login = () => {
                                     </div>
                                     <div className="d-flex flex-column align-items-center justify-content-center  w-full mt-4" >
                                         <Input value={code} onChange={codeChange} onBlur={codeBlur} type="tell" placeholder="كد ورود" className={codeinputClass} />
-                                        <Btn   className="w-75 text-light Login-Btn p-2 rounded" disabled={!codeisValid} type="submit">
+                                        <Btn onClick={enterHandler} className="w-75 text-light Login-Btn p-2 rounded" disabled={!codeisValid} type="submit">
                                             ورود
                                         </Btn>
                                     </div>

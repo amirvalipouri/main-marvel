@@ -51,10 +51,29 @@
     }
 }
 
+
+
 .header-btn{
     position: absolute;
     top: 20px;
     left: 10px;
+}
+
+.profile-btn{
+    outline: none;
+    border: 1px solid #efefef;
+    font-family: $iranSans;
+    font-size: 15px;
+    color: white;
+    margin: 0px 10px;
+    border-radius: 5px;
+    background-color: #007CD8;
+    padding: 8px;
+    width: 100px;
+
+    &:hover{
+        background-color: darken($color: #007CD8, $amount: 10%);
+    }
 }
 
 @media screen and (max-width : 992px) {

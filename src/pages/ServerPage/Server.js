@@ -4,9 +4,12 @@ import {Container , Row , Col , Button} from "react-bootstrap"
 import ServerAmico from '../../assert/Server-amico.png'
 import p130 from '../../assert/130.png'
 import p131 from '../../assert/131.png'
+import ServerVideo from '../../assert/serverVideo.png'
 import './Server.scss'
 
+
 function Server() {
+    
     return (
         <div  className="SERVER w-full">
             <Row className="Row1 w-full">
@@ -55,9 +58,9 @@ function Server() {
                         </Col>
                         <Col className="w-full" xs={4} sm={4} md={4} lg={4} xl={4} >
                             <div className="buy-server p-3">
-                                <p className="text-center text-white mb-4 mt-2 iranSans">سرور 1</p>
+                                <p className="text-center text-white mb-4 mt-2 iranSans">سرور 2</p>
                                 <p  className="text-center text-white mt-5 iranSans">ماهيانه</p>
-                                <p className="text-center text-white  iranSans">  تومان  500.000 </p>
+                                <p className="text-center text-white  iranSans">  تومان  1.000.000 </p>
                                 <Button className="btn-server text-white w-100 mt-5 mx-auto"><span className="mx-2 my-1"><svg xmlns="http://www.w3.org/2000/svg" id="Backward_arrow_small" data-name="Backward arrow small" width="8.1" height="14.4" viewBox="0 0 12.1 19.4">
                                     <path id="Path_36" data-name="Path 36" d="M9.7,12.1,0,2.777,2.889,0,9.7,6.546,16.511,0,19.4,2.777Z" transform="translate(12.1) rotate(90)" fill="#ffffff"/>
                                     </svg></span>خريد</Button>
@@ -75,10 +78,10 @@ function Server() {
                         </Col>
                         <Col className="w-full" xs={4} sm={4} md={4} lg={4} xl={4} >
                             <div className="buy-server p-3">
-                                <p className="text-center text-white mb-4 mt-2 iranSans">سرور 1</p>
+                                <p className="text-center text-white mb-4 mt-2 iranSans">سرور 3</p>
                                 <p  className="text-center text-white mt-5 iranSans">ماهيانه</p>
-                                <p className="text-center text-white  iranSans">  تومان  500.000 </p>
-                                <Button className="btn-server text-white w-100 mt-5 mx-auto"><span className="mx-2 my-1"><svg xmlns="http://www.w3.org/2000/svg" id="Backward_arrow_small" data-name="Backward arrow small" width="8.1" height="14.4" viewBox="0 0 12.1 19.4">
+                                <p className="text-center text-white  iranSans">  تومان  1.500.000 </p>
+                                <Button  className="btn-server text-white w-100 mt-5 mx-auto"><span className="mx-2 my-1"><svg xmlns="http://www.w3.org/2000/svg" id="Backward_arrow_small" data-name="Backward arrow small" width="8.1" height="14.4" viewBox="0 0 12.1 19.4">
                                     <path id="Path_36" data-name="Path 36" d="M9.7,12.1,0,2.777,2.889,0,9.7,6.546,16.511,0,19.4,2.777Z" transform="translate(12.1) rotate(90)" fill="#ffffff"/>
                                     </svg></span>خريد</Button>
                             </div>
@@ -89,11 +92,14 @@ function Server() {
                     </Row>
                 </Col>
             </Row>
-            {/* <Row className="Row3">
-                <Col className="col-1">
-
+            <Row className="Row3">
+                <Col style={{backgroundColor : "#EFEFEF" , height : "500px"}} className="w-full d-flex justify-content-center align-items-center" xs={12} sm={12} md={12} lg={12} xl={12} >
+                    <div  className="w-75  h-100 d-flex flex-column justify-content-center align-items-center p-4">
+                        <p className="text-center iranSans mt-5" style={{color : "#002266" , fontSize : '20px'}}>آموزش ثبت سفارش و خرید ویندوز سرور ترید</p>
+                        <img style={{width : "100%" , height : "100%"}} src={ServerVideo} alt="آموزش ثبت سفارش" />
+                    </div>
                 </Col>
-            </Row> */}
+            </Row>
         </div>
     )
 }

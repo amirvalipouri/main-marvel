@@ -9,8 +9,9 @@ import {
   useRoutes,
 } from "react-router-dom";
 
-import Layout from "../src/Layout/Layout"
+import Layout from "../src/Layout/Layout";
 import Server from './pages/ServerPage/Server';
+import Profile from './pages/Profile/Profile';
 
 
 const routes = [
@@ -23,7 +24,8 @@ const routes = [
     element: <Layout />,
     children: [
       { path: "/", element: <Main /> },
-      { path : '/server' , element : <Server/>  }
+      { path : '/server' , element : <Server/>  },
+      { path : '/profile' , element : <Profile />}
     ],
   },
 ]
